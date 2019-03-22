@@ -1,10 +1,10 @@
-0.1 터미널(session)
-$ ls
-$ pwd
+0. 터미널(session)
+$ ls<br>
+$ pwd<br>
 $ clear
 
-0.2 git(버전관리저장소)
-git status: staging area(add)-commit 할 게 없다.
+0. git(버전관리저장소)
+git status: staging area(add)-commit 할 게 없다.<br>
 git log: local repo(뭉텅이)-commit을 확인해준다.
 
 1. 파이썬(Codecademy)
