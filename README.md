@@ -1,3 +1,5 @@
+# 1학기
+
 0. 터미널과 git(버전관리저장소) (session)<br>
 $ ls<br>
 $ pwd<br>
@@ -10,3 +12,6 @@ git log: local repo(뭉텅이)-commit을 확인해준다.<br>
 %: return remainder, //: return only 몫<br>
 조건문에서의 in(only 파이썬!!)과 for문에서의 in<br>
 문자열도 배열이다.<br>
+<br>
+### 네이버 블로그
+[거북이 개발자](https://blog.naver.com/syparkehsc)
