@@ -1,0 +1,140 @@
+ .line{
+  width: 3px;
+  height: 40px;
+  background-color: gray;
+}
+.fix_up{
+  position: fixed;
+}
+
+.navbar{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.nav-left{
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.nav-right{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 50px;
+}
+
+.icon{
+  margin: 0 10px;
+}
+
+.prof{
+  height: 200px;
+  padding: 0 30px;
+  padding-bottom: 40px;
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.prof_img{
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+  border-radius: 100%;
+}
+.prof_right{
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.prof-txt-up{
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button{
+  /* width: fit-content 자동완성 기능 */
+  display: flex;
+  align-items: center;
+}
+.prof-txt-center{
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.prof-txt-bottom{
+  padding: 0 20px;
+}
+
+.img{
+  width: 150px; 
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.img_img{
+  height: 150px;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.img_txt{
+  font-size: 15px;
+  text-align: center;
+  width: 150px;
+  height: 20px;
+}
+
+.photo{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.center_navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 30px;
+  margin: 10px auto;
+}
+
+.center_button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0
+}
+
+.button_box{
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 0;
+  width: 100px;
+  height: 28px;
+  border: 1px solid gray;
+}
+
+.photo-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+

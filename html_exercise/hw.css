@@ -32,6 +32,7 @@
   margin-right: auto;
   text-align: center;
 }
+
 .profile{
   width: 120px;
   height: 120px;
@@ -39,6 +40,7 @@
   position: absolute;
   top:490px;
   left:190px;
+  /* object-fit:cover //정사각형으로 만들어줌*/
 }
 
 .name{
