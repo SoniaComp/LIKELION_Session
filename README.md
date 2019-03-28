@@ -13,5 +13,6 @@ git log: local repo(뭉텅이)-commit을 확인해준다.<br>
 조건문에서의 in(only 파이썬!!)과 for문에서의 in<br>
 문자열도 배열이다.<br>
 <br>
+
 ### 네이버 블로그
 [거북이 개발자](https://blog.naver.com/syparkehsc)
