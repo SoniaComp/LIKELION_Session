@@ -1,60 +1,66 @@
- .line{
-  width: 3px;
-  height: 40px;
-  background-color: gray;
+/* body에 주어진 -8x margin? border? 없애기.. hr.. */
+/* 헷갈리는 부분
+  justift-content: 가로 --> space-between, space-around
+  align-content: 세로
+  */
+body{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }
-.fix_up{
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box ;
-  position: fixed;
-  background-color: white;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  height: 75px; 
-}
-
 .navbar{
   width: 100%;
   height: 70px;
+  position: fixed;
+  background-color: white;
+  box-sizing: border-box ;
+  border-bottom: 1px solid grey;
   display: flex;
   align-items: center;
   justify-content: space-between; 
 }
-
 .nav-left{
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-left: 40px;
 }
-
+.line{
+  width: 1px;
+  height: 40px;
+  background-color: gray;
+}
+.icon{
+  margin: 0 10px;
+  height: 40px;
+}
+.nav-center{
+  height: 40px; 
+  width: 280px; 
+  text-align: center; 
+  font-size: 15pt;
+}
 .nav-right{
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-right: 50px;
 }
-
-.icon{
-  margin: 0 10px;
-}
-
+/* prof margin-top을 120px으로 주니까, navbar의 position도 120이 됐당! padding-top으로 바꾸어줌 */
 .prof{
   height: 200px;
-  width: 750px;
-  padding: 0 30px;
-  padding-bottom: 40px;
+  width: 730px;
+  margin-bottom: 40px;
+  margin-left: 100px;
   padding-top: 120px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
-
 .prof_img{
   width: 170px;
   height: 170px;
-  border: 1px solid gray;
+  margin-right: 50px;
+  border: 1px solid lightgray;
   border-radius: 100%;
 }
 .prof_right{
@@ -69,11 +75,22 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.username{
+  font-size: 40px;
+}
 .button{
   /* width: fit-content 자동완성 기능 */
   display: flex;
   align-items: center;
+}
+.button-set{
+  height: 38px; 
+  width: 110px; 
+  font-size: 20px; 
+  background-color: lightgray;
+  color: white;
+  border-radius: 10%;
+  margin-right: 20px;
 }
 .prof-txt-center{
   display: flex;
@@ -81,13 +98,18 @@
   justify-content: space-between;
 }
 
+.photo{
+  margin-left: 100px;
+  width: 750px;
+  display: flex;
+  align-items: center;
+}
 .img{
   width: 100px; 
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
 }
-
 .img_img{
   height: 100px;
   border-radius: 100%;
@@ -95,7 +117,6 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-
 .img_txt{
   font-size: 12px;
   text-align: center;
@@ -103,43 +124,44 @@
   height: 10px;
 }
 
-.photo{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .center_navbar{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 240px;
+  width: 90%;
   height: 30px;
-  margin: 10px auto;
+  margin: 40px auto;
+  border-top: lightgray 1px solid;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
-
-.button_box{
-  font-size: 25px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0 0;
-  width: 100px;
-  height: 28px;
-  border: 1px solid gray;
+.nav-menu{
+  box-sizing: border-box ;
+  margin: 0 30px;
+  padding: 10px;
+  color: gray;
 }
-
+.select{
+  border-top: black solid 1px;
+  color: black;
+}
 .photo-main{
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 
 .my_photo{
+/*
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  */
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
 }
 
 .photo_in{
