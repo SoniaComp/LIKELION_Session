@@ -21,3 +21,8 @@ Inline Style은 큰 규모의 프로젝트에서 디버깅하기 힘듦으로, c
 
 ### 네이버 블로그
 [거북이 개발자](https://blog.naver.com/syparkehsc)
+
+br
+virtual machine
+장고 프로젝트와 앱 차이
+랜더
