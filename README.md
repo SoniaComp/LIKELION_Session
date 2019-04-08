@@ -22,7 +22,9 @@ Inline Style은 큰 규모의 프로젝트에서 디버깅하기 힘듦으로, c
 ### 네이버 블로그
 [거북이 개발자](https://blog.naver.com/syparkehsc)
 
-br
-virtual machine
-장고 프로젝트와 앱 차이
-랜더
+## 랜더
+Virtual machine
+
+## 수요일부터 밤새서 할일!!
+<<파이썬으로 네이버 API 받아오기>><br>
+<<책 Review 사이트 만들기>>
