@@ -118,4 +118,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+# 정적파일 최상위 경로
 STATIC_URL = '/static/'
+# 정적 파일이 위치한 경로들.. static이라는 디렉토리에 저장한다.
+# 경로는 list, tuple로 써야 합니당!
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
+# 여러군데 static file이 모아져 있을 때 한 곳으로 모을 때
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

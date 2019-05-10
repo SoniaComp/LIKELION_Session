@@ -7,10 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>상세뵈기</title>
 </head>
-
+{% extends "home.html" %}
 <body>
+{% block content %}
   <h2>{{post.title}}</h2>
   <h5>{{post.contents}}</h5>
-  <a href="{%url 'home'}">돌아가기</a>
+  <a href="{%url 'home'%}">돌아가기</a>
+  <a href="{%url 'edit' post.pk%}">수정!</a>
+  <a href="{%url 'delete' post.pk%}">지워버린닷!!</a>
+{% endblock %}
 </body>
 </html>
