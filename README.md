@@ -17,14 +17,11 @@ git log: local repo(뭉텅이)-commit을 확인해준다.<br>
 div로 먼저 구간을 나눈 후, CSS<br>
 큰 블록(div)을 먼저 나눈 다음, 세부적인 것들을 수정<br>
 Inline Style은 큰 규모의 프로젝트에서 디버깅하기 힘듦으로, class로 해결하기!<br>
-하위의 element가 인식하는 공간은 상위 element아래이다. ex) 상위 body에 준 margin값은 하위에서 변경 불가능. 그 안에서 margin, padding이 정해짐!
+하위의 element가 인식하는 공간은 상위 element아래이다. ex) 상위 body에 준 margin값은 하위에서 변경 불가능. 그 안에서 margin, padding이 정해짐!<br>
+<br>
+3. Django<br>
+`CRUD` `1:N DB 구조` `로그인 기능`<br>
+pipenvshell은 폴더 안에서 시작..(폴더명) -> 상위폴더로 pipenvshell 켜지면, 하위폴더에도 적용됨(주의!)<br>
 
 ### 네이버 블로그
 [거북이 개발자](https://blog.naver.com/syparkehsc)
-
-## 랜더
-Virtual machine
-
-## 수요일부터 밤새서 할일!!
-<<파이썬으로 네이버 API 받아오기>><br>
-<<책 Review 사이트 만들기>>
