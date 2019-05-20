@@ -24,5 +24,3 @@ news_titles = soup.find_all(class_='_sp_each_title')# find_all이라는 메소�
 title_list = []
 for title in news_titles:
   title_list.append({'url':title.get('href'), 'title':title.get('title')})
-
-  
