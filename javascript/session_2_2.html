@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- EventListener -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class = "box">박스</div>
+
+  <h1>운장이 형은 바보다.</h1>
+  <button>아닐걸?</button>
+
+  <script>
+    let box = document.querySelector(".box")
+
+    // 마우스를 올렸을 때
+    box.addEventListener('mouseover', function(){
+      box.style.color="red";
+      box.style.backgroundColor = "pink";
+      console.log("마우스가 올라갔다!")
+    })
+
+    // 마우스가 나갔을 때
+    box.addEventListener('mouseout', function(){
+      box.style.color="black";
+      box.style.backgroundColor = "yellow";
+      console.log("마우스가 나갔다.");
+    })
+
+    let h1 = document.querySelector('h1')
+    let button = document.querySelector('button')
+
+    button.addEventListener('click', function(){
+      h1.innerHTML = "운장이는 <i>멍총이</i>다."
+      button.innerHTML = "그거지!"
+    })
+  </script>
+</body>
+
+</html>

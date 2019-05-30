@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<!-- 태그 설정 -->
+<body>
+  <h2 id="title">제목입니다.</h2>
+  <h1>운장이 형은 <i>바보</i>다.</h1>
+  <!-- 이런 것도 되는구나! -->
+  <a href = "https://www.naver.com">네이버로 가기</a>
+  <img src = "https://picsum.photos/200/300"/>
+</body>
+<script>
+  // title이라는 변수에 h1 태그 할당
+  let title = document.querySelector('#title');
+
+  // title_style이라는 클래스를 추가하기
+  // -------------- 인라인 스타일과 같은 효과 -------------- 
+  title.classList.add("title_style");
+  // title.classList.remove() - 적용 해제
+  // title.classList.toggle() - 껐다 켰다
+
+  // querySelector할게 여러개인 경우 첫번째 꺼만 잡힌다.
+  let h1 = document.querySelector('h1');
+  // h1.innerHTML = '운장이는 <i>멍총이</i>다.';
+  console.log(h1.innerHTML);
+  h1.textContent = "운장이는 몽총이다";
+  console.log(h1.textContent);
+
+  /****** 이런 것도 되는구나! ******/
+  let link = document.querySelector('a')
+  let image = document.querySelector('img')
+
+  // get Attribute 속성 불러오기
+  console.log(link.getAttribute('href'));
+  console.log(image.getAttribute('src'));
+</script>
+</html>
