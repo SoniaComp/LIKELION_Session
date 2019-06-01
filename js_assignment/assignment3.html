@@ -68,7 +68,19 @@
         event.stopPropagation();
         div.style.backgroundColor = "pink";
         div.parentElement.style.backgroundColor = "red";
-      })
+      });
     });
+    // 초기화는 어떻게 하지?
+
+    /*
+    divs.forEach(function(div, index) {
+      div.addEventListener("click", function(event) {
+        event.stopPropagation();
+	      divs.forEach(function(div){ div.style.backgroundColor = "white"; });
+	      div.style.backgroundColor = "blue";
+	      if(index != 0) div.parentNode.style.backgroundColor = "red";
+      })	    
+    })
+    */
   </script>
 </html>
