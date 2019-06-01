@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>글 쓰기</title>
+</head>
+{% extends "home.html" %}
+<body>
+{% block content %}
+  <h1>새로운 글 쓰기!</h1>
+  <form method="POST">{% csrf_token %}
+    <!-- csrf_token 글을 만들 때마다 사용 -->
+    {{form.as_p}}
+    <!-- p 태그 안에 보여주거라! -->
+    <button type="submit">제출 !</button>
+  </form>
+{% endblock %}
+</body>
+
+</html>

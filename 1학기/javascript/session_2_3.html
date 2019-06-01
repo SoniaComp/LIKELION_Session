@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>여기가 바뀔거에요!</h1>
+  <h1 id="result">_________________</h1>
+
+  <input type="text" id="input" />
+
+  <script>
+    let result = document.querySelector('#result')
+    let input = document.querySelector('#input')
+
+    input.addEventListener('keyup', keydown)
+
+    /*   
+    function keydown(event){
+      // switch문을 쓴닷!!!!!
+      console.log(event)
+      let code = event.keyCode
+      if(code == 13){
+        result.innerHTML = "엔터를 눌렀군요!"
+      }
+      else if(code == 18){
+        result.innerHTML = "옵션을 눌렀군요!"
+      }
+      else if(code == 17){
+        result.innerHTML = "컨트롤을 눌렀군요!"
+      }
+      else if(code == 16){
+        result.innerHTML = "쉬프트를 눌렀군요!"
+      }
+      else{
+        result.innerHTML = "이상한걸 눌렀어요!"
+      }
+    }
+    */
+    function keydown(event){
+      result.innerHTML = input.value
+      // HTML로 인식한다.
+    }
+    // keydown: 누르는 순간
+    // keyup: 눌렀다 뗴는 순간 실행
+    // keypress: 누르고 있음 지속 실행
+  </script>
+</body>
+
+</html>

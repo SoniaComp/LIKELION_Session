@@ -1,0 +1,63 @@
+#box{
+  background:yellow;
+  /* rgba를 사용해도 된당! */
+  /* rgb에 커서를 대고 있으면 자동으로 뜬다. */
+  width:500px;
+  height:500px;
+  /* 개발자 도구로 알아내기 */
+  position:absolute;
+  top:165px;
+  left:19px;
+  opacity:0.5;
+  z-index:100;
+}
+
+img{
+  position: relative;
+  margin:10px;
+  width:500px;
+  height:500px;
+}
+
+/*
+*{
+  margin: 0;
+}
+*/
+
+.flexbox{
+  /* 부모로 감싸주고 매겨준다. */
+  display: flex; /* 원래 블록 엘레먼트인 애들이 부모에게 flex를 매김으로써 inline으로 바뀜 */
+  /*flex-end; space-between*/ /* 정렬 */ 
+  justify-content: center;
+  align-items: center;
+}
+
+.flexitem{
+  /* content(전체 화면에서..), item(부모 한 줄에서) */
+  width: 150px;
+  height: 100px;
+  border: 2px solid white;
+  background-color: skyblue;
+  font-size: 40px;
+  /* display: flex로 먼저 먹이기 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center{
+  height: 50px;
+}
+/*
+position: relative, absolute, fixed
+*/
+
+/*
+------ display: flex일 때만 가능 ------
+---flex-direction
+---flex-wrap: 줄바꿈.. 
+justify-content: 가로 정렬
+// align-content: 안 씀
+align-items: 세로 정렬
+*/

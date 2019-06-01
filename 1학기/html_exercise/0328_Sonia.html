@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- 내가 참조할 온갖 것들을 넣어 봅시당 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="sonia.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>LIKE LION</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>"Hello Like Lion!"</h1>
+    <p>안녕하세요. 거북이 박선영입니다^^</p>
+    <a href="http://www.naver.com">naver로 Go!</a>
+
+    <!-- form은 정보를 담아서 넘기는 아이 -->
+    <form action="next.html" method="POST">
+      <label id="id">id</label>
+      <input type="text" id="id" name="id">
+      <!-- label이랑 input이랑 연결.. GET method일 때 URL에 label이 뜬다. -->
+      <label id="password">password</label>
+      <input type="password" id="password" name="password">
+      <button type="submit">submit</button>
+    </form>
+
+    <img src="540px-멋쟁이사자처럼_로고.png" alt="LION">
+    <div id="box"></div>
+    <!-- div는 네모박스! -->
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <div class="flexbox">
+      <div class="flexitem">1</div>
+      <div class="flexitem center">2</div>
+      <div class="flexitem">3</div>
+      <!-- 줄 날리기: command+ shift+ k-->
+      <!-- 애플로고: shift+ option+ k -->
+      <!-- div.classname * 3하면 된다! 오오오오오 -->
+    </div>
+
+    <div class="btn btn-primary">버튼</div>
+    <!-- Component 탐험 할 수 있다!! -->
+  </div>
+</body>
+
+</html>
+
+<!-- box model : box-sizing: border-box -->
+<!-- CSS 우선순위: inline-style > id > class > element -->
+
+<!-- div는 block level 이고, span은 inline level -->
+<!-- 그래서 span으로는 글자 일부를 감싸줄 수 있다. -->

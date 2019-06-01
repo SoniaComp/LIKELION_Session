@@ -1,0 +1,15 @@
+.detail{
+  display: flex;
+}
+
+.picture{
+  background-image: url('book.png');
+  background-size: 180px;
+  height: 100px;
+  width: 180px;
+  opacity: 0.2;
+}
+
+.title{
+  color: red;
+}

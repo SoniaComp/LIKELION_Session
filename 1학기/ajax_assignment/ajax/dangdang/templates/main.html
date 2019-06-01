@@ -1,0 +1,49 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>댕댕이</title>
+  <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="dang_pic">
+    <h1>아작!</h1>
+    <h3>댕댕이 사진 주세욥!</h3>
+    <img class="dang_img" />
+    <br>
+    <button id="btn">멍멍!!</button>
+  </div>
+  <script>
+    // ready, click 말고는 반복!
+    // 코드를 더 줄일 수 있을까?
+    $("#btn").ready(function (data) {
+      $.ajax({
+        url: "https://dog.ceo/api/breeds/image/random",
+        type: "get",
+        async: false,
+        success: function (result) {
+          $(".dang_img").attr("src", result.message);
+        }
+      })
+    });
+    $("#btn").click(function (data) {
+      $.ajax({
+        url: "https://dog.ceo/api/breeds/image/random",
+        type: "get",
+        async: false,
+        success: function (result) {
+          $(".dang_img").attr("src", result.message);
+        }
+      })
+    });
+  </script>
+</body>
+
+</html>

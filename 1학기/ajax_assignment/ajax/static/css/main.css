@@ -1,0 +1,11 @@
+.dang_pic{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.dang_img{
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
