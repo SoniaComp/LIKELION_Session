@@ -1,0 +1,57 @@
+<style>
+  .box {
+    outline: none;
+    margin: 100px;
+    /* 변화할  property들 */
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 30px 30px 30px 0px;
+    /* transition: height 1s, width 1s 1s, background-color 2s steps(5); */
+  }
+
+  .box:focus {
+    /* 
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    */
+    /* skew */
+    /*
+    transform: scale(2) rotate(45deg) rotateX(180deg) translateX(100px);
+    transform-origin: down left;
+    */
+    /* rotateX(180deg) translateX(100px)  */
+    animation-name: test;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes test {
+    0% {
+      border-radius: 30px 30px 30px 0px;
+      transform-origin: top left;
+    }
+    33%{
+      border-radius: 0px 30px 30px 30px;
+      transform: scale(2);
+      transform-origin: top left;
+      background-color: orange;
+    }
+    66%{
+      border-radius: 30px 0px 30px 30px;
+      transform: scale(3);
+      transform-origin: top left;
+      background-color: pink;
+    }
+    100%{
+      border-radius: 30px 30px 0px 30px;
+      transform: scale(4);
+      transform-origin: top left;
+      background-color: brown;
+    }
+  }
+</style>
+
+<div class="box" tabindex="0">
+</div>
